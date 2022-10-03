@@ -63,6 +63,11 @@ Using our top model, KNN, I able to predict the heart faliure on our data.
 KNN is the best model here which beats baseline accuracy by 17 %. I used age, ejection fraction, serum creatinine and time as features in our models. The age over 60 years are vulnerable times for the heart. At old ages, death event is high even if time (follow up) is smaller. Monitoring the levels of creatinine phosphokinase(cpk) and serum_creatinine is crucial as thier level seem to spike in death event. Ejection fraction dips down below healthly limits in cases of death so it should be monitored regualarly. Combination of ailements such as anaemia, diabetes did not produced as expected observation in death event. Additional information about the physical features of the patients (height, weight, body mass index, etc) can be heplful. People's occupational history would have been useful to detect additional risk factors for cardiovascular health disease
 
 
+# Reference
+1. https://doi.org/10.1186/s12911-020-1023-5
+2. https://www.kaggle.com/datasets/andrewmvd/heart-failure-clinical-data
+
+
 
 
 
