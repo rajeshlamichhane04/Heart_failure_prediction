@@ -14,4 +14,23 @@
 > - How does ejection fraction relate?
 > - Does all combined ailemnts create higher chances of death event?
 
+# Data Dictionary
+Feature|Description
+-------|------------
+age |Age of the patient 
+anaemia|Haemoglobin level of patient (Boolean)
+creatinine_phosphokinase|Level of the CPK enzyme in the blood (mcg/L)
+diabetes|If the patient has diabetes (Boolean)
+ejection_fraction| Percentage of blood leaving the heart at each contraction
+high_blood_pressure| If the patient has hypertension (Boolean)
+platelets|Platelet count of blood (kiloplatelets/mL)
+serum_creatinine| Level of serum creatinine in the blood (mg/dL)
+serum_sodium|Level of serum sodium in the blood (mEq/L)
+sex|Sex of the patient (Male = 1, Female =0)
+smoking|If the patient smokes or not (Boolean)
+time|Follow-up period (days)
+DEATH_EVENT| If the patient deceased during the follow-up period (Boolean)
+
+
+
 
