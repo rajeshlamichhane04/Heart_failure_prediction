@@ -1,7 +1,7 @@
-# Heartfaliure_prediction
+# Heartfaliure prediction
 
 # Project Goal
-> - The goals of this project are the predict the factors the lead to death event of patient having heart failure symptoms, to produce a prediction model using ML algorithms and to offer recommendation to reduce such deah event
+> - The goals of this project are the predict the factors the lead to death event from heart failure, to produce a prediction model using ML algorithms and to offer recommendation to reduce such deah event
 
 # Project Description
 > - I will conduct an in depth analysis to his heart faliure data that I acquired from Kaggle. The data in Kaggle was based on a dataset of 299 patients with heart faliure collected in 2015 at Faisalabad Institute of Cardiology and at the Allied Hospital in Faisalabad (Punjab, Pakistan), during April–December 2015. I will used exploratory analysis followed by some statiscal testing to find some important factors leading to heartfaliure deaths and then apply classiifcation ML algorithms to make model that can predict the death event.
@@ -36,7 +36,7 @@ DEATH_EVENT| If the patient deceased during the follow-up period (Boolean)
 > - You will need the copy of data from Kaggle using https://www.kaggle.com/datasets/andrewmvd/heart-failure-clinical-data
 > - You do not need Kaggle account
 
-# The plan
+# Plan
 > - I set up our initial questions during this phase. I made the outline of possible exploration techniques and hypothesis testing that we can use.
 
 # Acquisition
@@ -57,7 +57,10 @@ I conducted an initial exploration of the data by examining correlations between
 I scaled our top features using MinMax Scaler. Baseline accuray was calucalated using the mode of our target. I used Decision Tree, Randon Forest and KNN to compare the accuracy of my train and validate and chose KNN. The baseline accuracy was 68% while model accuracy from KNN on train, validate, test were 85%,86% and 85% respectively.
 
 # Prediction delivery
-Using our top model, KNN, I able to predict the on our data.
+Using our top model, KNN, I able to predict the heart faliure on our data.
+
+# Key Takeaways and Recommendations
+KNN is the best model here which beats baseline accuracy by 17 %. I used age, ejection fraction, serum creatinine and time as features in our models. The age over 60 years are vulnerable times for the heart. At old ages, death event is high even if time (follow up) is smaller. Monitoring the levels of creatinine phosphokinase(cpk) and serum_creatinine is crucial as thier level seem to spike in death event. Ejection fraction dips down below healthly limits in cases of death so it should be monitored regualarly. Combination of ailements such as anaemia, diabetes did not produced as expected observation in death event. Additional information about the physical features of the patients (height, weight, body mass index, etc) can be heplful. People's occupational history would have been useful to detect additional risk factors for cardiovascular health disease
 
 
 
