@@ -31,6 +31,47 @@ smoking|If the patient smokes or not (Boolean)
 time|Follow-up period (days)
 DEATH_EVENT| If the patient deceased during the follow-up period (Boolean)
 
+# Steps to Reproduce
+> - To clone this repo, use this command in your terminal git clone https://github.com/rajeshlamichhane04/Heart_faliure_prediction
+> - You will need the copy of data from Kaggle using https://www.kaggle.com/datasets/andrewmvd/heart-failure-clinical-data
+> - You do not need Kaggle account
+
+# The plan
+> - I set up our initial questions during this phase. I made the outline of possible exploration techniques and hypothesis testing that we can use.
+
+# Acquisition
+I obtained this data from Kaggle via https://www.kaggle.com/datasets/andrewmvd/heart-failure-clinical-data. It is in downloaded csv format which you can save it locally in your repository.
+
+# Preparation
+I retrived a total of 299 rows with 13 columns.
+> - column names were industry standard
+> - changed a upper case column to lower case
+> - there was no null values in data
+> - as our dataset is small, I ignored the outliers
+> - split data into train (56%), validate(24%), test(20%), stratified on death_event
+
+# Exploration
+I conducted an initial exploration of the data by examining correlations between each of the potential features and the target. I also combined aliments into new column to determine if all ailments combined gave me good information. I also employed Select_kbest to find my drivers of death  event.
+
+# Modeling
+I scaled our top features using MinMax Scaler. Baseline accuray was calucalated using the mode of our target. I used Decision Tree, Randon Forest and KNN to compare the accuracy of my train and validate and chose KNN. The baseline accuracy was 68% while model accuracy from KNN on train, validate, test were 85%,86% and 85% respectively.
+
+# Prediction delivery
+Using our top model, KNN, I able to predict the on our data.
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
 
 
 
