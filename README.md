@@ -1,4 +1,4 @@
-# Heartfaliure prediction
+# Heartfailure prediction
 
 # Project Goal
 > - The goals of this project are the predict the factors the lead to death event from heart failure, to produce a prediction model using ML algorithms and to offer recommendation to reduce such deah event
